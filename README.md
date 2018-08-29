@@ -5,3 +5,5 @@ kubectl expose deployment uhello --type=NodePort
 minikube service uhello --url
 
 kubectl scale deployments/uhello --replicas=4
+
+minikube dashboard --- http://localhost:30000/
