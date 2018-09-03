@@ -14,6 +14,8 @@ minikube service uhello --url
 
 kubectl scale deployments/uhello --replicas=4
 
+kubectl autoscale deployment uhello --min=2 --max=10 --cpu-percent=80
+
 minikube dashboard --- http://localhost:30000/
 
 
